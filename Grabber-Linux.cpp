@@ -17,11 +17,15 @@ int main(int argc, char const *argv[])
     char tmpdel[1000];
     char contest[1000];
     //指定最小比赛数
-    int MinContest = 1;
+    int MinContest;
     //指定最大比赛数
-    int MaxContest = 509;
+    int MaxContest;
     char problemID[][2] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"};
     system("mkdir finished");
+    cout<<"Please input the MinContest:";
+    cin>>MinContest;
+    cout<<"Please input the MaxContest:";
+    cin>>MaxContest;
     for (int i = MinContest; i <= MaxContest; i++)
     {
         itoa(i, contest, 10);
